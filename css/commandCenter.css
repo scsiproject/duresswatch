@@ -1,0 +1,519 @@
+body {
+    height: auto;
+    background: #0075FA !important;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+
+}
+
+#header-Line{
+    overflow: hidden;
+    background-color: #192F7A;
+
+}
+
+.row::after{
+    content:"";
+    clear: both;
+}
+
+
+.commandCenterContainer {
+    width: 700px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    background-color: #0075FA;
+    border: 10px solid #eceff1;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.commandCompanyLogo{
+    width: 220px;
+    padding-left: 25px;
+}
+
+img.companyImageLogo{
+    height: 90px;
+    width: 247px;
+    background-color: #003070;
+    padding: 5px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+#audioRecordHistory.modal.fade.show{
+    display: block;
+    padding-left: 1px;
+}
+
+
+.custom-select.commandAction{
+    width: 245px;
+    margin-bottom: -10px;
+    height: 40px;
+}
+
+#audioArchive.btn.btn-success{
+    margin-left: 26px;
+    width: 245px;
+    height: 40px;
+    border-color: white;
+}
+
+select#queryEvent.form-control.mr-sm-2{
+    width: 140px;
+    margin-bottom: -10px;
+    height: 40px;
+
+}
+
+input#queryEvent.form-control.mr-sm-2{
+    width: 323px;
+    height: 40px;
+    float: left;
+    margin-top: 10px;
+}
+
+#logout_button{
+    width: 140px !important;
+    height: 35px;
+    overflow: hidden;
+    float: right;
+    border-radius: 0px;
+
+}
+
+#blueLineSeparation{
+    width: 640px;
+    height: 10px;
+    background: #192F7A;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+i.fa.fa-search{
+    margin-left: -40px;
+    padding-top: 21px;
+}
+
+button#search.btn.btn-outline-light.my-2.my-sm-0{
+    width: 68px;
+}
+
+#duressTitle{
+    margin-top: 15px;
+    margin-left: 15px;
+    FONT-SIZE: 25px;
+    float: left;
+}
+
+#duressSearchEvent{
+    float: left;
+    margin-left: 192px;
+}
+
+input#staff_fname{
+    margin-bottom: 0rem!important;
+}
+
+input#staff_surname{
+    margin-bottom: 0rem!important;
+}
+
+input#staff_contact{
+    margin-bottom: 0rem!important;
+}
+
+.commandAction{
+    margin-left: 27px;
+}
+
+#staffAlertLevel{
+    margin-left: 27px;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.subbers {
+    height: 40px;
+    width: 268px;
+    text-align: center;
+}
+
+
+.commandColumnRight{
+    float: left;
+    width: 326px;
+    background: #fff;
+    margin-top: 15px;
+    height: 295px;
+    padding-top: 5px;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+input#staff_fname, #staff_surname, #staff_contact{
+    width: 268px;
+    margin-left: 26px;
+    height: 40px;
+    padding-left: 10px;
+}
+
+input#staff_alert_level{
+    height: 60px;
+    width: 232px;
+    margin-left: 42px;
+    margin-top: 5px;
+}
+
+td#emp_info{
+    padding-left: 28px
+}
+
+.commandColumnLeft{
+    float: left;
+    padding-bottom: 40px;
+    height: 110px;
+    margin-top: 24px;
+    margin-right: 35px;
+    margin-left: 22px;
+}
+
+input#search_bar{
+    float: left;
+    padding: 7px;
+    margin-left: 20px;
+    width: 115px;
+
+}
+
+input#search_button{
+    float: left;
+    width: 113px;
+    height: 42px;
+
+}
+
+.staffListWithAlert{
+    float: left;
+    width: 657px;
+    background: #fff;
+    height: 340px;
+    margin-left: 15px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-top: 12px
+}
+
+table.table_staff_header{
+    border-spacing: 0px;
+    background: #A8AABC;
+    width: 657px;
+    height: 43px;
+}
+
+#branch_padding {
+    height: auto !important;
+    width: 86px;
+    border-spacing: 0px;
+    padding: 5px;
+}
+
+
+div#table-responsive{
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: block;
+    height: 297px;
+
+}
+
+#staffTableMain:hover{
+    cursor: pointer !important;
+}
+
+#staffTableMain tr:hover{
+    background-color: lightsteelblue;
+}
+
+#col_emp_info{
+    width: 84px;
+    height: 26px;
+}
+
+#search_col_emp_info1{
+    margin-left: 10px;
+    padding-right: 15px;
+}
+
+
+
+.search-box{
+    transform: translate(21%,6%);
+    background: #0B243B;
+    height: 52px;
+    border-radius: 10px;
+    padding: 6px;
+    float: left;
+}
+
+.search-btn{
+    color: #192F7A;
+    float: right;
+    width: 64px;
+    height: 38px;
+    border-radius: 50%;
+    background: chartreuse;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+img.music_image{
+    height: 120px;
+    background: none;
+    margin-top: 160px;
+    padding-left: 60px;
+}
+
+td#tablecol_audio{
+    margin-top: 35px;
+    margin-left: 445px;
+    height: 34px;
+}
+
+#music_location{
+    width: 243.5px;
+    height: 287px;
+    background: white;
+    float: right;
+    margin-right: 17px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+div.commandrRightaudio{
+    margin-top: 100px;
+}
+
+table#audioTable:hover{
+    cursor: pointer !important;
+
+}
+
+table#audioTable tr:hover{
+    background-color: lightsteelblue;
+}
+
+table.table_audio_header{
+    margin-top: 24px;
+    background: #A8AABC;
+    width: 244px;
+    text-align: center;
+    height: 31px;
+}
+
+div.columnAudio{
+    margin-left: 28px;
+    margin-top: 11px;
+}
+
+img.audioLogo{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20%;
+    display: block;
+}
+
+img.duressLogo{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 9%;
+    display: block;
+    height: 200px;
+    width: 170px;
+}
+
+div.font-weight-bold{
+    padding-left: 45px;
+}
+
+.noImageIcon{
+    margin-top: -74px;
+}
+
+.ctrls {
+    width: 23%;
+    height: 40px;
+}
+
+input[name="in_staffid"] {
+    display: none;
+}
+
+img[src*="https://cdn.rawgit.com/000webhost/logo/e9bd13f7/footer-powered-by-000webhost-white2.png"]
+{display: none;}
+
+
+#leftAudioTable{
+    float: left;
+    width: 305px;
+}
+
+#tableAudioStaff{
+    border: solid 1px black;
+    width: 98%;
+    height: 395px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#listOfEmployeeAudioHistory{
+    float: left;
+    margin-left: 18px;
+    width: 314px;
+
+}
+
+#listOfAudioHistory{
+    height: 395px;
+    width: 315px;
+    border: solid 1px black;
+    overflow-y: auto;
+}
+
+.close{
+    padding: 15px;
+}
+
+.modal-header.empAudioHeader{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.searchRow{
+    padding-top: 30px;
+    padding-bottom: 39px;
+}
+
+.tableEmpAudioContainer{
+    padding-top: 26px;
+}
+
+#audioTitleColumn{
+    background: #A8AABC;
+    border: solid 1px black;
+}
+
+input#queryAudio.form-control.mr-sm-2{
+    float: left;
+    width: 460px;
+    height: 48px;
+}
+
+button#searchAudio.btn.btn-primary{
+    height: 47px;
+    width: 171px;
+}
+
+th#paddingBottomAudio{
+    padding-bottom: 10px;
+}
+
+div.modal-dialog.modal-lg{
+    margin-top: 110px;
+    width: 673px;
+}
+
+
+#colAudioID{
+    width:75px;
+    padding-left: 13px ;
+}
+
+#colAudioFname{
+    width: 112px;
+    padding-left: 22px ;
+}
+
+#colAudioLname{
+    width: 109px;
+    padding-left: 22px
+}
+
+#colAudioFile{
+    width: 315px;
+    padding-left: 115px;
+}
+
+/*center align items in table Employee Staff ID  */
+#audioStaffTableID {
+    width: 76px;
+    text-align: center;
+}
+/*center align items in table Employee Firstname  */
+#audioStaffTableFirstname{
+    width: 113px;
+    text-align: center;
+}
+/*center align items in table Employee Surname  */
+#audioStaffTableSurname{
+    width: 111px;
+    text-align: center;
+}
+
+#audioStaffTableMain:hover{
+    cursor: pointer !important;
+}
+
+#audioStaffTableMain tr:hover {
+    background-color: lightsteelblue;
+}
+
+.noDataFoundImage{
+    margin-top: 60px;
+}
+
+#moreInfoTitle.modal-title{
+    margin-top: 48px;
+    margin-bottom: 18px;
+}
+
+.modal-content{
+    border-radius: 10px;
+}
+
+#imgEmployeeAudioHistoryTable{
+    width: 200px;
+    height: 200px;
+    margin-top: 80px;
+    margin-left: 45px;
+}
+
+#imgAudioHistoryTable{
+    width: 200px;
+    height: 200px;
+    margin-top: 80px;
+    margin-left: 45px;
+}
+
+div#staffLoc{
+    height: 390px;
+    width: 100%;
+}
+
+@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
+    div#staffLoc{
+        height: 383px;
+        width: 100%;
+    }
+}
