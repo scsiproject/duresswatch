@@ -52,7 +52,7 @@ else{
                             $result=mysqli_query($conn,$sql);
                             while($row=mysqli_fetch_array($result))
                             {
-                               echo '<img src="data:image/png;base64,'.$row['image'].' "class="companyLoginLogo"/>';
+                               echo '<img src="data:image/png;base64,'.$row['image'].'" class="companyLoginLogo"/>';
 
                             }
                        ?>
