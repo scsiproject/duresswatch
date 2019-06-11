@@ -112,7 +112,7 @@ $(document).ready(function(){
   if($.trim(username).length > 0 && $.trim(password).length > 0)
   {
    $.ajax({
-    url:"commandcenter/verify_account.php",
+    url:"/duresswatch/commandcenter/verify_account.php",
     method:"POST",
     data:{
       username: username,
