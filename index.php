@@ -1,0 +1,172 @@
+<?php
+//index.php
+session_start();
+if(isset($_SESSION["username"]) && isset($_SESSION["privlev"]))
+{
+	if($_SESSION["privlev"] == "Administrator"){
+ header("location: /duresswatch/admin/php/admin.php");
+}
+else{
+	header("location: /duresswatch/commandcenter/commandCenterLogin.php");
+}
+}
+?>
+
+<?php include 'commandcenter/dbconnect.php'; ?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SCSI DURESS</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- <script src="duresswatch/commandcenter/libs/sweetalert/sweetalert2.all.min.js"></script> -->
+
+
+    <!-- Font Awesome JS -->
+        <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
+         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<!-- Our Custom CSS-->
+         <link rel="stylesheet" href="index.css">
+
+
+</head>
+
+<body>
+<div class="container h-100">
+		<div class="d-flex justify-content-center h-100">
+			<div class="user_card">
+				<div class="d-flex justify-content-center">
+					<div class="brand_logo_container">
+                        <?php
+                            $sql="SELECT * FROM list_of_images WHERE id = 9";
+                            $result=mysqli_query($conn,$sql);
+                            while($row=mysqli_fetch_array($result))
+                            {
+                               echo '<img src="data:image/png;base64,'.$row['image'].' "class="companyLoginLogo"/>';
+
+                            }
+                       ?>
+					</div>
+				</div>
+				<div id="login_result"></br></div></br>
+				<div class="d-flex justify-content-center form_container">
+					<form>
+					    <div>
+                            <Select id="login_user" name="level" class="form-control">
+                                <option value = "" disabled >Select Login Type</option>
+                                <option value="Administrator">Administrator</option>
+                                <option value="Command_center">Command Center</option>
+                            </Select>
+                        </div>
+						<div class="input-group mb-3">
+							<div class="input-group-append">
+								<span class="input-group-text"><i class="fas fa-user"></i></span>
+							</div>
+							<input type="text" id="username" name="" class="form-control input_user" value="" placeholder="username">
+						</div>
+						<div class="input-group mb-2">
+							<div class="input-group-append">
+								<span class="input-group-text"><i class="fas fa-key"></i></span>
+							</div>
+							<input type="password" id="password" name="" class="form-control input_pass" value="" placeholder="password">
+						</div>
+
+					</form>
+				</div>
+				<div class="d-flex justify-content-center mt-3 login_container">
+					<button type="button" name="button" class="btn login_btn" id="submit">Login</button>
+				</div>
+
+            </div>
+        </div>
+</div>
+
+
+</body>
+</html>
+
+
+<script>
+$(document).ready(function(){
+
+	$(document).bind('keypress', function(e) {
+					 if(e.keyCode==13){
+								$('#submit').trigger('click');
+						}
+			 });
+
+ $('#submit').click(function(){
+  var username = $('#username').val();
+  var password = $('#password').val();
+	var privlev = $('#login_user').val();
+  if($.trim(username).length > 0 && $.trim(password).length > 0)
+  {
+   $.ajax({
+    url:"commandcenter/verify_account.php",
+    method:"POST",
+    data:{
+      username: username,
+      password: password,
+      privlev: privlev
+    },
+    cache:false,
+    beforeSend:function(){
+     $('#submit').html("Logging in...");
+    },
+    success:function(data)
+    {
+     if(data)
+     {
+			if(privlev == "Administrator"){
+      window.location.href = "/duresswatch/admin/php/admin.php";
+			}
+			else{
+			window.location.href = "/duresswatch/commandcenter/commandCenterLogin.php";
+			}
+     }
+     else
+     {
+      // $("#box-login").effect("shake", {times:5}, 300);
+      $('#submit').html("Login");
+      $('#login_result').html("<span class='text-danger'><center>Invalid username / password and privilege level.</center></span>");
+			$('#username').val("");
+			$('#password').val("");
+			$('#username').focus();
+     }
+    }
+   });
+  }
+  else if($.trim(username).length > 0 && $.trim(password) <= 0)
+  {
+		// $("#box-login").effect("shake", {times:5}, 300);
+		$('#submit').val("Login");
+		$('#login_result').html("<span class='text-danger'><center>Enter password.</center></span>");
+		$('#password').focus();
+  }
+	else if($.trim(username).length <= 0 && $.trim(password).length > 0)
+  {
+		// $("#box-login").effect("shake", {times:5}, 300);
+		$('#submit').val("Login");
+		$('#login_result').html("<span class='text-danger'><center>Enter username.</center></span>");
+		$('#username').focus();
+  }
+	else
+  {
+		// $("#box-login").effect("shake", {times:5}, 300);
+		$('#submit').val("Login");
+		$('#login_result').html("<span class='text-danger'><center>Username and password fields are empty.</center></span>");
+  }
+ });
+});
+
+</script>
