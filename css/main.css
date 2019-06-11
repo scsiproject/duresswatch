@@ -1,0 +1,492 @@
+.maincontainer {
+    width: 1140px;
+    height: 678px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    background-color: #0075FA;
+    border: 10px solid #eceff1;
+    border-radius: 20px;
+}
+
+@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
+    .maincontainer {
+        height: 696px;
+    }
+}
+
+td{
+    padding:0px;
+    border-width:0px;
+    margin:0px;
+}
+
+#header-Line{
+    overflow: hidden;
+    background-color: #192F7A;
+    width: 100%;
+    height:auto;
+
+}
+
+.action{
+    width: 200px;
+    height: 34px;
+    margin-bottom: 4px;
+    background: white;
+}
+
+.columnLeft{
+    float: left;
+    white-space: nowrap;
+    padding-left: 5px;
+    padding-bottom: 40px;
+    padding-right: 10px;
+    height: 110px;
+    margin: 10px;
+    margin-left: 20px;
+
+}
+
+.columnMiddle {
+    float:left;
+    width: 700px;
+    background: #fff;
+    margin: 10px;
+    margin-left: 0px;
+    height: 150px;
+
+
+}
+
+.columnRight{
+    width: 10%;
+    float: left;
+    margin: 10px;
+    padding-left: 10px;
+    margin-left: 0px;
+
+}
+
+
+
+#tableColumnItem{
+    width: 135px;
+
+}
+
+#tableColumnBranch{
+    width: 275px;
+
+}
+
+.table_header_branch {
+    border-spacing: 0px;
+    padding-left: 30px;
+    width: 700px;
+    height: 30px;
+    background: #a8aabc;
+}
+
+.table_header_staff{
+    border-spacing: 0px;
+    width: 288px;
+    background: #a8aabc;
+    color: white;
+}
+
+
+tbody, thead tr { display: block; }
+
+tbody {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#branch_padding {
+    height: auto !important;
+    width: 135px;
+    border-spacing: 0px;
+    padding-top: 5px;
+    padding-left: 20px;
+    color: white;
+}
+
+#branch_paddingAddress {
+    height: auto !important;
+    width: 135px;
+    border-spacing: 0px;
+    padding-top: 5px;
+    padding-left: 163px;
+    color: white;
+}
+
+#companyInfo {
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 162px;
+    width: 700px;
+    text-indent: 10px;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 10px;
+    }
+}
+
+#imgLogo {
+    display: block;
+    margin-right: auto;
+    margin-bottom: 10px;
+    background-color: #003070;
+    padding: 3px;
+    height: 53px;
+
+}
+
+#imgDisplay {
+    height: 140px;
+    width: 114px;
+
+}
+
+.rowBody::after{
+    content:"";
+    clear: both;
+
+}
+
+/* Create three equal columns that floats next to each other */
+.staffLocation {
+    float: left;
+    width: 205px;
+    padding-left: 10px;
+    margin-right: 80px;
+    height: 310px;
+    margin-bottom: 1px;
+
+}
+
+#employeeInfo{
+    float: left;
+    width: 365px;
+    padding-left: 11px;
+    height: 375px;
+    margin-left: 20px;
+    margin-bottom: 1px;
+    border: solid 1px;
+}
+
+@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
+    #employeeInfo{
+        height: 390px;
+    }
+}
+
+.deviceLocation{
+    float: left;
+    /* width: 200px; */
+    padding-left: 12px;
+    height: 310px;
+    /* margin-left: 1px; */
+    margin-bottom: 1px;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .nextcolumn {
+        width: 100%;
+    }
+}
+
+
+#tableMain:hover{
+    cursor: pointer !important;
+}
+#tableMain tr:hover{
+    background-color: lightsteelblue;
+}
+
+#tableMain{
+    border-spacing: 0px;
+    width: 800px;
+
+}
+
+
+.showBSB{
+    width: 140px;
+    margin-top: 10px;
+    height:39px;
+    font-size: larger;
+    font-weight: bold;
+    border: 4px solid #0B243B;
+}
+
+#bsbDisplayedID {
+    padding-left: 35px;
+    padding-top: 5px;
+}
+
+#employeeTable:hover{
+    cursor: pointer !important;
+}
+
+#employeeTable tr:hover {
+    background-color: lightsteelblue;
+}
+
+#employeeTable{
+    height: 300px;
+    width: 270px;
+    padding-left: 10px;
+    border-spacing: 0px;
+}
+
+#employeeColumn{
+    width: 90px;
+    text-align: left;
+    text-indent: 10px;
+}
+
+#employeeColumnFirstn {
+    width: 105px;
+}
+
+#staff_location_table {
+    overflow-y: auto;
+    height: 343px;
+    background: white;
+    width: 288px;
+    border-bottom-left-radius: 8px;
+}
+
+@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
+    #staff_location_table {
+        height: 360px;
+    }
+}
+
+#staff_location_header1{
+    width: 74px;
+    height: 30px;
+    padding-left: 10px;
+}
+
+#staff_location_header2{
+    width: 92px;
+    height: 30px;
+    padding-left: 10px;
+}
+
+#staff_location_header3{
+    width: 90px;
+    height: 30px;
+    padding-left: 10px;
+}
+
+#blueLineSeparation {
+    width: 1100px;
+    height: 10px;
+    background: #192F7A;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+#titleStaffLocation{
+    margin-left: 10px;
+
+}
+
+#device_location_table{
+    overflow-y: auto;
+    height: 344px;
+    margin-left: -4px;
+    width: 430px;
+    background: white;
+    padding-left: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
+    #device_location_table{
+        height: 360px;
+    }
+}
+
+#device_location_header{
+    padding-left: 15px;
+    padding-right: 42px;
+}
+
+.table_device {
+    border-spacing: 0px;
+    margin-left: -4px;
+    width: 430px;
+    height: 30px;
+    background: #a8aabc;
+}
+
+#deviceColumn {
+    padding-left: 5px;
+    text-align: left;
+    width: 100px;
+}
+
+#deviceColumnStaffID {
+    padding-left: 10px;
+    text-align: left;
+}
+
+input[name="in_staffid"] {
+    display: none;
+}
+
+#deviceColumnIPAdd {
+    padding-left: 10px;
+    text-align: left;
+    text-indent: 5px;
+    width: 100px;
+}
+
+.inputbox{
+    width: 205px;
+    height: 25px;
+}
+
+input#in_branch{
+    width: 189px;
+    height: 26px;
+    margin-left: 5px;
+    padding-left: 5px;
+    border: 0px;
+    border-radius: 3px;
+}
+
+input#in_pin{
+    width: 56px;
+    height: 26px;;
+    margin-left: 5px;
+}
+
+.alertGroups {
+    height: 45px;
+}
+
+.accessBtn {
+    width: 31%;
+    height: 40px;
+    position: relative;
+}
+
+#addbranch{
+    width: 140px;
+    height: 39px;
+    margin-top: 5px;
+}
+
+#delbranch{
+    width: 140px;
+    margin-top: 5px;
+}
+
+#searchEmp{
+    margin-top: 0px;
+    width: 140px;
+}
+
+#logout_button{
+    width: 140px !important;
+    height: 35px;
+    overflow: hidden;
+    float: right;
+    border-radius: 0px;
+
+}
+
+.img-top-square{
+    margin-top: 25px;
+}
+
+
+#img-holder {
+    width: 121px;
+    height: 146px;
+    float: left;
+    display: block;
+    margin-right: auto;
+    margin-top:8px;
+    background-color: #0B243B;
+    padding: 3px;
+    position: relative;
+    float: left;
+}
+
+.emailbox{
+    width: 293px;
+    height: 25px;
+    margin-top: 20px;
+}
+
+.alertPanel {
+    padding: 0px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    margin-top: 10px;
+    display: none;
+}
+
+#alertGroupSelector{
+    margin-top: 12px;
+    margin-bottom: 13px;
+    margin-left: 4px;
+    width: 339px;
+    height: 25px;
+}
+
+fieldset {
+    height: 35px;
+    width: 341px;
+}
+
+img[src*="https://cdn.rawgit.com/000webhost/logo/e9bd13f7/footer-powered-by-000webhost-white2.png"]
+{display: none;}
+
+#updateImg{
+    display: none;
+}
+
+#img-holder img:hover {
+    opacity: 0.5;
+    z-index: 500;
+}
+
+#img-holder img:hover + i {
+    display: block;
+    z-index: 501;
+}
+
+#img-holder i {
+    display: none;
+    position: absolute;
+    margin-left: 43px;
+    margin-top: 0px;
+    overflow:hidden;
+}
+
+
+.col.align-self-center{
+    max-width: 34%;
+}
+
+div.modal-footer {
+    padding-top: 20px;
+    margin-top: 20px;
+    padding-bottom: 10px;
+}

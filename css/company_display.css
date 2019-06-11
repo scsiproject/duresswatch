@@ -1,0 +1,17 @@
+.company-box{
+    width: 600px;
+    height: 100px;
+    padding: 10px;
+    background: #E6B0AA;
+    border-radius: 5px;
+    border-top: 5px solid #007DBA;
+    margin: 120px auto;
+    padding-left: 40px;
+
+}
+
+.item_selected_box{
+    width: 100px;
+    height: 10px;
+
+}

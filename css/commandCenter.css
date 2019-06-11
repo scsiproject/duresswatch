@@ -1,0 +1,389 @@
+/*
+    CSS START
+*/
+
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #131633;
+}
+
+.container{
+    background: #222a35;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+
+}
+
+.companyImageLogo{
+    height: 65px;
+    width: 175px;
+}
+
+img.alertLogo{
+    height: 45px;
+    width: 45px;
+}
+
+img#eventAlertLogo{
+    height: 25px ;
+    width: 70px;
+}
+
+
+
+.navbar{
+    background: #131633;
+}
+
+.navbar-brand{
+    text-align: left;
+}
+
+.material-icons.orangeExit{
+    color: #de4007;
+}
+
+.material-icons.md-50  { font-size: 50px; margin-top: 5px;  }
+.material-icons.md-50.assign { font-size: 50px; color: #9fcdff;  margin-top: 5px;  }
+.material-icons.md-50.music { font-size: 50px; color: #fcbd5c;  margin-top: 5px;  }
+
+.selectLocation{
+    margin-top: 18px;
+
+}
+
+.selectAction{
+    width: 155px;
+}
+
+ul.alertDropdown li:hover {
+    background: #007bff;
+}
+
+.alertDropdown li{
+    padding-left: 10px;
+}
+/*input#in_stidn{*/
+/*display: none;*/
+/*}*/
+
+/*#inputAction{*/
+    /*display:none;*/
+/*}*/
+
+#inputActionField{
+    display:none;
+}
+
+.btn-primary{
+    background-color: #222840 ;
+
+}
+
+button.btn.btn-primary.dropdown-toggle{
+    background-color: #222840;
+}
+
+.dropdown-menu a:hover{
+    background-color: #007bff;
+
+}
+
+.eventBox{
+    padding: 15px;
+    background: #131633;
+    width: 100%;
+    height: 510px;
+    overflow-y: hidden;
+
+}
+
+.audioEventBox{
+    padding: 15px;
+    background: #131633;
+    width: 100%;
+    height: 610px;
+    overflow-y: hidden;
+    margin-bottom: 20px;
+}
+
+#audioTH{
+    background: #131633;
+}
+
+#eventUpdates{
+
+    background: #131633;
+    width: 100%;
+    margin-bottom: 10px;
+    height: 425px;
+    overflow: auto;
+    margin-top: -6px;
+
+}
+
+.mapBox{
+    width: 100%;
+    background: #131633;
+    padding: 15px;
+}
+
+.audioBox{
+    width: 100%;
+    background: #131633;
+    padding: 15px;
+    height: 610px;
+}
+
+#Map.container.tab-pane.active{
+    margin: 0px;
+    padding:0px;
+    /*padding-left: 0px;*/
+    /*padding-right: 0px;*/
+    /*padding-bottom: 0px;*/
+}
+
+.nav-link-map{
+    border: 1px solid #123be5 !important;
+    border-bottom: 1px solid #123be5 !important;
+    background: #405189;
+    color: white;
+}
+
+.nav-tabs-map {
+    border-bottom: 1px solid #007bff;
+
+}
+
+.employeeBox{
+    padding: 15px;
+    background: #131633;
+    width: 100%;
+    margin-bottom: 20px;
+
+}
+
+.data select{
+    margin: 20px;
+    background: #c69500;
+}
+
+
+.data{
+    height: 60px;
+    width: 20%;
+    background: red;
+    float: left;
+}
+
+#reportUpdates{
+    height: 590px;
+    overflow-y: auto;
+    margin-top: -6px;
+}
+
+#eventTH{
+    padding : 10px;
+    background: #131633;
+    z-index: 2;
+}
+
+#reportTH{
+    padding : 10px;
+    background: #131633;
+}
+
+th { position: sticky; top: 0; }
+
+#employeeMainEventDetails {
+    height: 145px;
+    overflow-y: auto;
+    z-index: 1;
+    margin-top: -6px;
+}
+
+.table.table-hover tbody tr:hover td{
+    background-color: #4286f4;
+}
+
+div.empEvent.col-lg12.col-md-12{
+    padding-left: 0px;
+}
+
+.table-striped>tbody>tr:nth-child(even)>td{
+    background-color:#131633;
+}
+
+.table-striped>tbody>tr:nth-child(odd)>td{
+    background-color:#222840;
+}
+
+.table-striped>thead>tr:nth-child(even)>th{
+    background: #131633;
+}
+
+.table td, .table th{
+    color: #ffffff;
+    border-top: #131633;
+    border-bottom: #131633;
+}
+
+.table thead th{
+    border-bottom: #131633;
+}
+
+.header-title {
+    background: #425189;
+
+}
+
+.watchAlert{
+    background: white;
+    padding:3px;
+}
+
+
+
+.footer {
+
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #131633;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: -6px;
+}
+
+
+.pagination_link, .pagination_link_clicked{
+    background: white;
+    margin: 1px;
+    padding: 3px;
+}
+
+.pagination_link:active, .pagination_link_clicked:active{
+    background: #4286f4;
+}
+
+.pagination_link:hover, .pagination_link_clicked:hover{
+    background: #4286f4;
+}
+
+
+.searchBox{
+    float: left;
+    margin-right: 5px;
+}
+
+.searchBtn{
+    float: left;
+}
+
+.rowSearch{
+    margin: 0 auto;
+    padding: 10px;
+}
+
+#listOfEmployeeAudioHistory{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#listOfAudioHistory {
+    height: 512px;
+    overflow-y: auto;
+
+}
+
+
+#tableAudioStaff{
+    overflow-y: auto;
+    overflow-x: auto;
+    height: 515px;
+    margin-top: -16px;
+}
+
+.buttonStyle{
+    background: #007BFF !important;
+    border: 0px !important;
+}
+
+.btn-info{
+    width: 100% !important;
+    background-color: #007BFF !important;
+    border-color: #007BFF !important;
+}
+
+.btn-info:hover{
+    border-color: #007BFF !important;
+    background-color: #007BFF !important;
+}
+
+#EventLoadingMessageMain {
+    position: absolute;
+    margin:auto;
+    display: inline-block;
+    background: url("../images/loadingspinner.gif") 50% 50% no-repeat rgb(19,22,51);
+    width: 90%;
+    height: 80%;
+    opacity: .9;
+    z-index: 9999;
+}
+
+#EventLoadingMessage{
+    position: absolute;
+    margin:auto;
+    display: inline-block;
+    background: url("../images/loadingspinner.gif") 50% 50% no-repeat rgb(19,22,51);
+    width: 95%;
+    height: 85%;
+    opacity: .9;
+    z-index: 9999;
+}
+
+
+
+#EventLoadingMessageAudio {
+    position: absolute;
+    margin:auto;
+    display: inline-block;
+    background: url("../images/loadingspinner.gif") 50% 50% no-repeat rgb(19,22,51);
+    width: 90%;
+    height: 82%;
+    opacity: .9;
+    z-index: 9999;
+}
+
+
+/* Pagination style */
+.pagination{
+    /*padding-left: 350px !important;*/
+    margin: 0!important;
+    padding: 0 !important;
+}
+
+.pagination li{
+    display: inline;
+    padding: 6px 0px 6px 2px;
+    margin-right: -1px;
+    font: 15px/20px Arial, Helvetica, sans-serif;
+}
+
+.paginationcenter{
+    margin: auto;
+    width: 28%;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+
+
+
+/* CSS END */

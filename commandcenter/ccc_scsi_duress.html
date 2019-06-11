@@ -1,0 +1,44 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Call SIP Phone</title>
+
+    <link rel="stylesheet" href="../webphone/css/click2call/click2call.css" />
+    <script src="../webphone/webphone_api.js?jscodeversion=17"></script>
+    <script src="../webphone/js/click2call/click2call.js?jscodeversion=17"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="../jquery/itemSelect.js"></script>
+
+    <script>
+    $(document).ready(function(){
+
+
+        var url = window.location.search.substring(1);
+        var url_t = url.substr(url.indexOf("=") + 1);
+
+        $(".waidn").html("Call " +url_t);
+
+        webphone_api.parameters['autostart'] = true;   // start the webphone only when button is clicked
+        webphone_api.onLoaded(function ()
+        {
+            webphone_api.setparameter('serveraddress', '161.43.114.22'); // yoursipdomain.com your VoIP server IP address or domain name
+            webphone_api.setparameter('username', 'chad');      // SIP account username
+            webphone_api.setparameter('password', '123456');      // SIP account password (see the "Parameters encryption" in the documentation)
+            webphone_api.setparameter('callto', '' +url_t+ '@161.43.114.22');        // destination number to call
+            webphone_api.setparameter('autoaction', '1');    // 0=nothing (default), 1=call, 2=chat, 3=video call
+          });
+        });
+    </script>
+</head>
+<body style="margin: 0; font-family: Verdana ; font-size: 12px; color:#2e3d47; line-height: 155%;">
+
+    <span class="waidn" style="text-align: center;"></span>
+
+    <div id="c2k_container_0" title="" style="text-align: center;">
+    <!--rewrite the CALLTO and uncomment the following line to enable support for ancient browsers-->
+    <!--<a href="tel://CALLTO" id="c2k_alternative_url">CALLTO</a>-->
+    </div>
+</body>
+</html>
